@@ -1,12 +1,9 @@
 #include <iostream>
 using namespace std;
- 
 int main() {
     int a, b, choice;
- 
     cout << "Enter two numbers: ";
     cin >> a >> b;
- 
     cout << "Menu:\n";
     cout << "1. Add\n";
     cout << "2. Subtract\n";
@@ -15,7 +12,6 @@ int main() {
     cout << "5. Mod\n";
     cout << "Enter your choice: ";
     cin >> choice;
- 
     switch (choice) {
         case 1:
             cout << "Sum = " << (a + b) << endl;
@@ -41,6 +37,5 @@ int main() {
         default:
             cout << "Invalid choice." << endl;
     }
- 
     return 0;
 }
