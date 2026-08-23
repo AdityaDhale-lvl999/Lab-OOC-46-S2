@@ -53,17 +53,17 @@ int main() {
     LibraryBook book1("Bleach Thousand Year Blood War", "Tite Kubo", 101);
     LibraryBook book2("Attack on Titan", "Hajime Isayama", 102);
 
-    book1.display();   // both start Available
+    book1.display();   //both start Available
     book2.display();
 
     book1.issueBook("Shivam");
     book2.issueBook("Aditya");
-    book1.display();   // both show Issued
+    book1.display();   //both show Issued
     book2.display();
 
     book1.returnBook();
     book2.returnBook();
-    book1.display();   // both show Available again —  works for both obj
+    book1.display();   //both show Available again —  works for both obj
     book2.display();   
 
     return 0;
