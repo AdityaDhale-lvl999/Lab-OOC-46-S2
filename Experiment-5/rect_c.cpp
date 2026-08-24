@@ -20,6 +20,6 @@ int main (){
     Rectangle O2 (10 , 20);
     O.disp();
     O2.disp();
-    return 1;
+    return 0;
 
 }
