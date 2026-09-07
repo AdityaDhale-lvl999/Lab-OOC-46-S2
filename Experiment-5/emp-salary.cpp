@@ -9,7 +9,6 @@ private:
     float basicSalary;
     float hra; // house rent allowance
     float da; // dearness allowance ???
-
 public:
     //constructor
     Employee(int id, string name, float basic, float hraVal, float daVal) {
@@ -19,12 +18,10 @@ public:
         hra = hraVal;
         da = daVal;
     }
-
     //calculate gross salary
     float grossSalary() {
         return basicSalary + hra + da;
     }
-
     //display employee details
     void display() {
         cout << "\nEmployee ID: " << empId;

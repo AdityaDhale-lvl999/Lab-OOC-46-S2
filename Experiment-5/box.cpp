@@ -47,10 +47,10 @@ public:
 };
 int main() {
     //default constructor
-    {  // {  object created and initialized } creating object inside paranthesis gives it a scope when the scope ends for that object destructor gets called :)
+     // {  object created and initialized } creating object inside paranthesis gives it a scope when the scope ends for that object destructor gets called :)
         Box box1;
         box1.display();
-    }
+    
     //parameterized constructor ---> if i gave scope to this object the copy constructor wont work because memory would be free and nothing to copy from.
     Box box2(2.0, 3.0, 4.0);
     box2.display();
