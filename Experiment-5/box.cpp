@@ -39,6 +39,8 @@ public:
              << ", Volume: " << volume() << endl;
     }
     //destructor
+    //it will release memory backwards of how program ran. 
+    // like if copy constructor was last call it will release copy constr.. then parametrized.. then default. 
     ~Box() {  //program ends 
         cout << "Destructor called for Box (Volume was: " << volume() << ")" << endl;
     }
