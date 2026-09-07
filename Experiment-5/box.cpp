@@ -21,7 +21,7 @@ public:
         cout << "\nParameterized constructor called" << endl;
     }
     //copy constructor ---> reference to an object of the same class || reads the member variables of the object passed in
-    Box(const Box &b) {   // <&> for refrence || const because copy constructor shouldnt modify the object its copying from ||// b IS box2 — just under a different name
+    Box(const Box &b) {   // <&> for refrence ||const because copy constructor shouldnt modify the object its copying from ||// b IS box2 — just under a different name
         length = b.length;
         breadth = b.breadth;
         height = b.height;
@@ -40,7 +40,7 @@ public:
     }
     //destructor
     //it will release memory backwards of how program ran. 
-    // like if copy constructor was last call it will release copy constr.. then parametrized.. then default. 
+    // like if copy constructor was last call it will release copy constr.. then parametrized.. then default. same for objects
     ~Box() {  //program ends 
         cout << "Destructor called for Box (Volume was: " << volume() << ")" << endl;
     }
