@@ -7,11 +7,17 @@ const double PI = 3.14159; // Constant value for PI
 class Shape {
 public:
     // Pure virtual function to calculate the area
-    virtual double calculateArea() const = 0;
+    virtual double calculateArea() {
+        std::cout << "\nthis is area " << std::endl;
+    }
 
  
     // Pure virtual function to calculate the perimeter
-    virtual double calculatePerimeter() const = 0;
+    virtual double calculatePerimeter() {
+         
+        std::cout << "\nthis is perimeter " << std::endl;
+    
+    }
 };
  
 // Derived class: Circle
@@ -24,12 +30,12 @@ public:
     Circle(double rad) : radius(rad) {}
  
     // Area of the circle
-    double calculateArea() const override {
+    double calculateArea()  {
         return PI * pow(radius, 2);
     }
  
     // Perimeter of the circle
-    double calculatePerimeter() const override {
+    double calculatePerimeter()  {
         return 2 * PI * radius;
     }
 };
@@ -45,12 +51,12 @@ public:
     Rectangle(double len, double wid) : length(len), width(wid) {}
  
     // Area of the rectangle
-    double calculateArea() const override {
+    double calculateArea()  {
         return length * width;
     }
  
     // Perimeter of the rectangle
-    double calculatePerimeter() const override {
+    double calculatePerimeter()  {
         return 2 * (length + width);
     }
 };
@@ -67,13 +73,13 @@ public:
     Triangle(double s1, double s2, double s3) : side1(s1), side2(s2), side3(s3) {}
  
     // Area of the triangle using Heron's formula
-    double calculateArea() const override {
+    double calculateArea()  {
         double s = (side1 + side2 + side3) / 2; // Semi-perimeter
         return sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
  
     // Perimeter of the triangle
-    double calculatePerimeter() const override {
+    double calculatePerimeter() {
         return side1 + side2 + side3;
     }
 };
